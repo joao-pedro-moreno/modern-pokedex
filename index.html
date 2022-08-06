@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Modern Pokedex</title>
+</head>
+<body>
+    <div class="section-1">
+        <form class="form">
+            <input type="search" class="input-search" placeholder="Name or Number" required>
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">Prev &lt;</button>
+            <button class="button btn-next">Next &gt;</button>
+        </div>
+    </div>
+
+    <div class="pokemon-images">
+        <button class="left-arrow image-arrow" onclick="leftArrow()"><i class='bx bx-chevron-left'></i></button>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="Pokemon" class="pokemon-image">
+        <button class="right-arrow image-arrow" onclick="rightArrow()"><i class='bx bx-chevron-right' ></i></button>
+    </div>
+
+
+    <div class="section-2">
+        <h1 class="pokemon-data">
+            <span class="pokemon-id">6</span> - 
+            <span class="pokemon-name">Charizard</span>
+        </h1>
+        <hr>
+        <h3 class="data-title">Types</h3>
+        <div class="pokemon-types">
+            <span class="pokemon-type pokemon-type0">Fire</span>
+            <span class="pokemon-type pokemon-type1">Flying</span>
+        </div>
+        <hr>
+        <h3 class="data-title">Skills</h3>
+        <div class="pokemon-skills">
+            <span class="pokemon-skill pokemon-skill0">Blaze</span>
+            <span class="pokemon-skill pokemon-skill1">Solar-Power</span>
+        </div>
+        <hr>
+        <h3 class="data-title">Stats</h3>
+        <div class="pokemon-all-stats">
+            <div class="pokemon-stats">
+                <span class="stats-name">Health</span>
+                <div class="pokemon-health pokemon-stats-base"></div>
+            </div>
+            <div class="pokemon-stats">
+                <span class="stats-name">Attack</span>
+                <div class="pokemon-attack pokemon-stats-base"></div>
+            </div>
+            <div class="pokemon-stats">
+                <span class="stats-name">Defense</span>
+                <div class="pokemon-defense pokemon-stats-base"></div>
+            </div>
+            <div class="pokemon-stats">
+                <span class="stats-name">Special Attack</span>
+                <div class="pokemon-special-attack pokemon-stats-base"></div>
+            </div>
+            <div class="pokemon-stats">
+                <span class="stats-name">Special Defense</span>
+                <div class="pokemon-special-defense pokemon-stats-base"></div>
+            </div>
+            <div class="pokemon-stats">
+                <span class="stats-name">Speed</span>
+                <div class="pokemon-speed pokemon-stats-base"></div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <footer>Desenvolvido por João Pedro Moreno</footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #404040;
+    display: flex;
+}
+
+.section-1 {
+    width: 25%;
+    height: 98vh;
+    position: absolute;
+    margin: 10px;
+    padding: 2%;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+
+.input-search {
+    outline: none;
+    border: none;
+    width: 95%;
+    height: 35px;
+    border-radius: 7px;
+    padding: 10px;
+    color: #0D0D0D;
+    font-size: clamp(5px, 5vw, 1rem);
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+
+input.input-search[type="search"]::-webkit-search-decoration,
+input.input-search[type="search"]::-webkit-search-cancel-button,
+input.input-search[type="search"]::-webkit-search-results-button,
+input.input-search[type="search"]::-webkit-search-results-decoration {
+    display: none; 
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 40%;
+    height: 30px;
+    border: none;
+    color: #0d0d0d73;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 500;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    color: #0D0D0D;
+}
+
+.section-2 {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 98vh;
+    position: absolute;
+    margin: 10px;
+    padding: 2%;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+
+.pokemon-data {
+    text-transform: capitalize;
+    color: white;
+    font-weight: 200;
+}
+
+.pokemon-id {
+    font-weight: 400;
+}
+
+.pokemon-name {
+    font-weight: 300;
+}
+
+hr {
+    margin: 10% 2%;
+}
+
+.data-title {
+    color: white;
+    font-size: clamp(20px, 5vw, 1rem);
+    margin-bottom: 5%;
+}
+
+.pokemon-types {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pokemon-type {
+    width: 45%;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 5px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: clamp(5px, 5vw, 1rem);
+}
+
+.pokemon-skills {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pokemon-skill {
+    width: 45%;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 5px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.pokemon-all-stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pokemon-stats {
+    width: 30%;
+    max-width: 80px;
+    height: 100px;
+    background-color: #141b2bd0;
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 5px;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.stats-name {
+    position: relative;
+    color: white;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.pokemon-stats-base {
+    background-color: #263354;
+    box-shadow: 0 8px 8px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 5px;
+    max-height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+
+.pokemon-images {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.pokemon-image {
+    height: 30%;
+}
+
+.image-arrow {
+    margin: 0 50px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.bx-chevron-left, .bx-chevron-right {
+    font-size: 90px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.bx-chevron-left:hover, .bx-chevron-right:hover {
+    color: #263354;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    opacity: 0.2;
+}
