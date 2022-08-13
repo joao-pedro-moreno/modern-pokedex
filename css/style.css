@@ -68,10 +68,32 @@ input.input-search[type="search"]::-webkit-search-results-decoration {
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 5px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .button:hover {
+    color: #0D0D0D;
+}
+
+.view-pokemon-list {
+    cursor: pointer;
+    margin-top: 100%;
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #0d0d0d73;
+    font-size: clamp(5px, 5vw, 1rem);
+    font-weight: 500;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 13, 13, 13, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.view-pokemon-list:hover {
     color: #0D0D0D;
 }
 

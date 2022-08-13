@@ -103,7 +103,7 @@ buttonNext.addEventListener("click", () => {
     renderPokemon(searchPokemon)
 })
 
-function leftArrow() {
+leftArrow = () => {
     if (`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${searchPokemon}.gif` == null) {
         pokemonImage.src = "../assets/pokemon-logo.png"
     } else if (pokemonImage.src.includes('back')) {
@@ -113,7 +113,7 @@ function leftArrow() {
     }
 }
 
-function rightArrow() {
+rightArrow = () => {
     if (`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${searchPokemon}.gif` == null) {
         pokemonImage.src = "../assets/pokemon-logo.png"
     } else if (pokemonImage.src.includes('back')) {
