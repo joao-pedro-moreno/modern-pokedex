@@ -269,10 +269,10 @@ footer {
     }
 }
 
+
 @media (max-width: 1000px) {
     .section-1 {
-        right: 0;
-        width: 97.5%;
+        width: 97%;
         height: 300px;
     }
 
@@ -286,9 +286,9 @@ footer {
     }
 
     .pokemon-image {
-        height: 60%;
+        height: 100%;
     }
-
+    
     .section-2 {
         right: 0;
         width: 97.5%;
@@ -296,8 +296,19 @@ footer {
         position: static;
         margin: 800px 10px 50px 10px;
     }
-
+    
     .pokemon-stats {
         margin: 10px;
+    }
+}
+
+@media (max-width: 567px) {
+    .pokemon-images {
+        height: 300px;
+        bottom: 42%;
+    }
+
+    .pokemon-image {
+        height: 63%;
     }
 }
